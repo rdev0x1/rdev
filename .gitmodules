@@ -1,0 +1,3 @@
+[submodule "themes/hugo-uncaged"]
+	path = themes/hugo-uncaged
+	url = git@github.com:rdev0x1/uncaged-hugo-theme.git

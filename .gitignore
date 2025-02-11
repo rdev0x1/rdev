@@ -1,0 +1,8 @@
+*.md
+.hugo_build.lock
+public/
+.Rhistory
+.RData
+tmp/
+themes/bootstrap4-blog/
+themes/starter-hugo-academic/
