@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build and Deploy to Cloudflare Pages
 on:
   push:
     branches:
@@ -12,29 +12,37 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: 'recursive'
-      
+
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: 'release'
-      
-      - name: Install dependencies
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install Python packages
+        run: pip install matplotlib
+
+      - name: Install R dependencies
         run: |
-          sudo apt-get install -y pandoc
+          sudo apt-get install -y pandoc libpng-dev
           Rscript -e 'install.packages(c("blogdown", "rmarkdown", "reticulate"), repos = "http://cran.rstudio.com/")'
           Rscript -e 'blogdown::install_hugo()'
 
-      - name: Check installed R packages
-        run: Rscript -e 'installed.packages()[, "Package"]'
-
       - name: Build site
-        run: Rscript -e 'options(blogdown.verbose = TRUE); blogdown::build_site(run_hugo=TRUE, build_rmd=TRUE)'
-      
-      - name: Deploy to GitHub Pages
+        run: |
+          Rscript -e 'library(reticulate)' # Check if it loads correctly
+          Rscript -e 'options(blogdown.verbose = TRUE); blogdown::build_site(run_hugo=TRUE, build_rmd=TRUE)'
+
+      - name: Deploy to Cloudflare Pages Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_PAT }}
+          github_token: ${{ secrets.GH_PATH }}
           publish_dir: ./public
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
-          publish_branch: gh-pages
+          publish_branch: cloudflare-pages
+          keep_files: true

@@ -1,0 +1,91 @@
+---
+title: "Starting a Blog with Hugo, R Markdown, and Python (Reticulate)"
+author: "Ramon Dev"
+date: "2025-02-11"
+output: #html_document
+  blogdown::html_page:
+    highlight: pygments
+params:
+  theme: solarized-dark
+categories: ["Geek"]
+tags: ["Hugo", "Python", "Blogging"]
+---
+
+```{R, results='hide', echo=FALSE}
+library(reticulate)
+reticulate::use_python(Sys.which("python3"), required=TRUE)
+```
+
+I always prioritize simplicity. While many opt for platforms like WordPress—replete with plugins and PHP-driven features—I find that those capabilities are often too cumbersome for a straightforward blog. Do you really need dynamic content for what is essentially static information?
+
+PHP-based sites can introduce extra maintenance overhead and potential security concerns. Instead, I turn to Hugo, combined with R Markdown and Python via the reticulate package. This approach secures the benefits of a static site (speed, security, and easy customization) without sacrificing the flexibility to run Python code where you need it.
+
+---
+
+## Using Utterances for Comments
+
+At times, you may still want dynamic functionality—most commonly, adding comments. Enter [Utterances](https://utteranc.es/): an open-source commenting system that uses GitHub issues to handle blog comments. It fits seamlessly with static sites, providing a dynamic element that doesn’t compromise the advantages of a static setup.
+
+---
+
+## Steps to Set Up Your Blog
+
+### 1. Install Hugo
+
+First, install Hugo by following the official [Hugo documentation](https://gohugo.io/getting-started/installing/). Once installed, create a new Hugo site in your terminal:
+
+```bash
+hugo new site mynewsite
+```
+
+### 2. Configure R Markdown and reticulate
+
+Install and load `reticulate` and `blogdown`:
+
+```{R, eval=FALSE}
+install.packages("reticulate")
+install.packages("blogdown")
+```
+
+Include `reticulate::use_python()` in your R Markdown setup to ensure Python chunks run correctly.
+
+### 3. Set Up Utterances
+
+To enable comments, you’ll need a GitHub repository where comments will be stored. Then follow the instructions in the official [Utterances guide](https://utteranc.es/) to integrate it into your site.
+
+---
+
+## Example: Python in R Markdown
+
+Below is a simple Python code chunk that generates a sine wave plot. With reticulate, you can effortlessly integrate Python code into your R Markdown document:
+
+```{python, eval=TRUE}
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate data points for the function f(x) = sin(x)
+x = np.linspace(-10, 10, 400)
+y = np.sin(x)
+
+# Create the plot
+plt.figure(figsize=(8, 6))
+
+# Plot the function
+plt.plot(x, y, label=r"$f(x)=\sin(x)$")
+
+# Add grid, title, and labels
+plt.grid(True)
+plt.title("Plot of the function " + r"$f(x)=\sin(x)$")
+plt.xlabel("x")
+plt.ylabel("f(x)")
+
+# Add legend
+plt.legend(loc='upper right')
+
+# Show the plot
+plt.show()
+```
+
+With Hugo, R Markdown, and Python working in unison, you can confidently build a secure, content-rich blog without the complexities of a traditional dynamic platform.\
+\
+Happy blogging !

@@ -6,3 +6,5 @@ public/
 tmp/
 themes/bootstrap4-blog/
 themes/starter-hugo-academic/
+*.lock~
+index_files/

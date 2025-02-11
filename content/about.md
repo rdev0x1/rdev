@@ -3,4 +3,7 @@ date: "2016-05-05T21:48:51-07:00"
 title: About
 ---
 
-This is a "hello world" example website for the [**blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and modified by [Yihui Xie](https://github.com/yihui/hugo-lithium).
+Hi,  
+I'm Abdel, also known as Uncaged Coder.  
+Don't set your expectations too high for this blog; it serves as a space for me to share my thoughts on a variety of subjects. The focus is primarily on Linux, open-source projects, and other geek-related topics.  
+This blog is powered by [**blogdown**](https://github.com/rstudio/blogdown).
