@@ -41,17 +41,17 @@
                 href="https://rdev.pages.dev/fr/tags/ego/"
                 />
   </url><url>
-    <loc>https://rdev.pages.dev/fr/2025/limposition-comme-racine-du-conflit-humain/</loc>
+    <loc>https://rdev.pages.dev/fr/2025/02-12-limposition-comme-racine-du-conflit-humain/</loc>
     <lastmod>2025-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rdev.pages.dev/2025/the-primacy-of-imposition-the-root-of-human-conflict/"
+                href="https://rdev.pages.dev/2025/02-12-the-primacy-of-imposition-the-root-of-human-conflict/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rdev.pages.dev/fr/2025/limposition-comme-racine-du-conflit-humain/"
+                href="https://rdev.pages.dev/fr/2025/02-12-limposition-comme-racine-du-conflit-humain/"
                 />
   </url><url>
     <loc>https://rdev.pages.dev/fr/</loc>
@@ -67,19 +67,6 @@
                 href="https://rdev.pages.dev/fr/"
                 />
   </url><url>
-    <loc>https://rdev.pages.dev/fr/tags/philosophy/</loc>
-    <lastmod>2025-02-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rdev.pages.dev/tags/philosophy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://rdev.pages.dev/fr/tags/philosophy/"
-                />
-  </url><url>
     <loc>https://rdev.pages.dev/fr/categories/philosophy/</loc>
     <lastmod>2025-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -91,6 +78,19 @@
                 rel="alternate"
                 hreflang="fr"
                 href="https://rdev.pages.dev/fr/categories/philosophy/"
+                />
+  </url><url>
+    <loc>https://rdev.pages.dev/fr/tags/philosophy/</loc>
+    <lastmod>2025-02-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rdev.pages.dev/tags/philosophy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://rdev.pages.dev/fr/tags/philosophy/"
                 />
   </url><url>
     <loc>https://rdev.pages.dev/fr/post/</loc>

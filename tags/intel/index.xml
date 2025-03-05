@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intel on Ramon Dev&#39;s blog</title>
+    <link>https://rdev.pages.dev/tags/intel/</link>
+    <description>Recent content in Intel on Ramon Dev&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 15 Mar 2017 14:53:25 +0000</lastBuildDate>
+    <atom:link href="https://rdev.pages.dev/tags/intel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intel interview</title>
+      <link>https://rdev.pages.dev/2017/03-15-intel-interview/</link>
+      <pubDate>Wed, 15 Mar 2017 14:53:25 +0000</pubDate>
+      <guid>https://rdev.pages.dev/2017/03-15-intel-interview/</guid>
+      <description>&lt;div class=&#34;float&#34;&gt;&#xA;&lt;img src=&#34;intel_logo.jpg&#34; title=&#34;Logo Intel&#34; alt=&#34;alt text&#34; /&gt;&#xA;&lt;div class=&#34;figcaption&#34;&gt;alt text&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;Do you want to work for Intel ?&lt;br&gt;&#xA;If you are curious, here is the test I did.&#xA;You are supposed to do it online and you have 2 hours.&lt;br&gt;&#xA;Unfortunately I don’t remember exactly the question I had.&lt;/p&gt;&#xA;&lt;div id=&#34;training-test&#34; class=&#34;section level1&#34;&gt;&#xA;&lt;h1&gt;Training test&lt;/h1&gt;&#xA;&lt;p&gt;Find a palindrome in an array&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A is the array&lt;/li&gt;&#xA;&lt;li&gt;N is the size&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;There were other special condition that I forgot, sorry.&lt;/p&gt;&#xA;&lt;p&gt;Example:&lt;br&gt;&#xA;A={-1,3,-4,5,1,-6,2,1};&lt;br&gt;&#xA;You can return 1 because&lt;br&gt;&#xA;-1 = -4+5+1-6+2+1&lt;br&gt;&#xA;If there is several solutions, then you can choose which to return.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

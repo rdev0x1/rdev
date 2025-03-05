@@ -1,0 +1,54 @@
+var canvas = document.getElementById("intel_exo2");
+var context = canvas.getContext('2d');
+var f = 3;
+var s = f*10;
+context.translate(0, canvas.height);
+context.scale(1, -1);
+
+context.fillStyle = "gray";
+context.beginPath();
+context.moveTo(0, s);
+context.lineTo(0, s+s);
+context.lineTo(s, s+s);
+context.lineTo(s, s+3*s);
+context.lineTo(2*s, s+3*s);
+context.lineTo(2*s, s+2*s);
+context.lineTo(3*s, s+2*s);
+context.lineTo(3*s, s+s);
+context.lineTo(4*s, s+s);
+context.lineTo(4*s, s+2*s);
+context.lineTo(5*s, s+2*s);
+context.lineTo(5*s, s+s);
+context.lineTo(6*s, s+s);
+context.lineTo(6*s, s+5*s);
+context.lineTo(7*s, s+5*s);
+context.lineTo(7*s, s+3*s);
+context.lineTo(9*s, s+3*s);
+context.lineTo(9*s, s+4*s);
+context.lineTo(10*s, s+4*s);
+context.lineTo(10*s, s+2*s);
+context.lineTo(11*s, s+2*s);
+context.lineTo(11*s, s);
+context.closePath();
+context.fill();
+
+context.fillStyle = "blue";
+context.scale(1, -1);
+context.fillText("1", s/2,0);
+context.fillText("3", s/2+s,0);
+context.fillText("2", s/2+2*s,0);
+context.fillText("1", s/2+3*s,0);
+context.fillText("2", s/2+4*s,0);
+context.fillText("1", s/2+5*s,0);
+context.fillText("5", s/2+6*s,0);
+context.fillText("3", s/2+7*s,0);
+context.fillText("3", s/2+8*s,0);
+context.fillText("4", s/2+9*s,0);
+context.fillText("2", s/2+10*s,0);
+
+context.fillText("a", s/2+11*s,-s-s/2);
+context.fillText("b", s/2+11*s,-2*s-s/2);
+context.fillText("c", s/2+11*s,-3*s-s/2);
+context.fillText("d", s/2+11*s,-4*s-s/2);
+context.fillText("e", s/2+11*s,-5*s-s/2);
+

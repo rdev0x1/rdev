@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.145.0">
+
+
+<title>Starting a Blog with Hugo, R Markdown, and Python (Reticulate) - Ramon Dev&#39;s blog</title>
+<meta property="og:title" content="Starting a Blog with Hugo, R Markdown, and Python (Reticulate) - Ramon Dev&#39;s blog">
+
+
+  <link href='https://rdev.pages.dev/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.jpg"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://bsky.app/profile/rdev0x1.bsky.social">Blue Sky</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Starting a Blog with Hugo, R Markdown, and Python (Reticulate)</h1>
+
+    
+    <span class="article-date">2025-02-11</span>
+    
+
+    <div class="article-content">
+      
+      
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<p>I always prioritize simplicity. While many opt for platforms like WordPress—replete with plugins and PHP-driven features—I find that those capabilities are often too cumbersome for a straightforward blog. Do you really need dynamic content for what is essentially static information?</p>
+<p>PHP-based sites can introduce extra maintenance overhead and potential security concerns. Instead, I turn to Hugo, combined with R Markdown and Python via the reticulate package. This approach secures the benefits of a static site (speed, security, and easy customization) without sacrificing the flexibility to run Python code where you need it.</p>
+<hr />
+<div id="using-utterances-for-comments" class="section level2">
+<h2>Using Utterances for Comments</h2>
+<p>At times, you may still want dynamic functionality—most commonly, adding comments. Enter <a href="https://utteranc.es/">Utterances</a>: an open-source commenting system that uses GitHub issues to handle blog comments. It fits seamlessly with static sites, providing a dynamic element that doesn’t compromise the advantages of a static setup.</p>
+<hr />
+</div>
+<div id="steps-to-set-up-your-blog" class="section level2">
+<h2>Steps to Set Up Your Blog</h2>
+<div id="install-hugo" class="section level3">
+<h3>1. Install Hugo</h3>
+<p>First, install Hugo by following the official <a href="https://gohugo.io/getting-started/installing/">Hugo documentation</a>. Once installed, create a new Hugo site in your terminal:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">hugo</span> new site mynewsite</span></code></pre></div>
+</div>
+<div id="configure-r-markdown-and-reticulate" class="section level3">
+<h3>2. Configure R Markdown and reticulate</h3>
+<p>Install and load <code>reticulate</code> and <code>blogdown</code>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;reticulate&quot;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;blogdown&quot;</span>)</span></code></pre></div>
+<p>Include <code>reticulate::use_python()</code> in your R Markdown setup to ensure Python chunks run correctly.</p>
+</div>
+<div id="set-up-utterances" class="section level3">
+<h3>3. Set Up Utterances</h3>
+<p>To enable comments, you’ll need a GitHub repository where comments will be stored. Then follow the instructions in the official <a href="https://utteranc.es/">Utterances guide</a> to integrate it into your site.</p>
+<hr />
+</div>
+</div>
+<div id="example-python-in-r-markdown" class="section level2">
+<h2>Example: Python in R Markdown</h2>
+<p>Below is a simple Python code chunk that generates a sine wave plot. With reticulate, you can effortlessly integrate Python code into your R Markdown document:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="co"># Generate data points for the function f(x) = sin(x)</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>x <span class="op">=</span> np.linspace(<span class="op">-</span><span class="dv">10</span>, <span class="dv">10</span>, <span class="dv">400</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a>y <span class="op">=</span> np.sin(x)</span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a><span class="co"># Create the plot</span></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="co"># Plot the function</span></span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a>plt.plot(x, y, label<span class="op">=</span><span class="vs">r&quot;$f(x)=\sin(x)$&quot;</span>)</span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a><span class="co"># Add grid, title, and labels</span></span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a>plt.title(<span class="st">&quot;Plot of the function &quot;</span> <span class="op">+</span> <span class="vs">r&quot;$f(x)=\sin(x)$&quot;</span>)</span>
+<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;x&quot;</span>)</span>
+<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;f(x)&quot;</span>)</span>
+<span id="cb3-19"><a href="#cb3-19" tabindex="-1"></a></span>
+<span id="cb3-20"><a href="#cb3-20" tabindex="-1"></a><span class="co"># Add legend</span></span>
+<span id="cb3-21"><a href="#cb3-21" tabindex="-1"></a>plt.legend(loc<span class="op">=</span><span class="st">&#39;upper right&#39;</span>)</span>
+<span id="cb3-22"><a href="#cb3-22" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" tabindex="-1"></a><span class="co"># Show the plot</span></span>
+<span id="cb3-24"><a href="#cb3-24" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<p><img src="https://rdev.pages.dev/2025/02-11-starting-a-blog-with-hugo-r-markdown-and-python-reticulate/index_files/figure-html/unnamed-chunk-3-1.png" width="768" /></p>
+<p>With Hugo, R Markdown, and Python working in unison, you can confidently build a secure, content-rich blog without the complexities of a traditional dynamic platform.<br />
+<br />
+Happy blogging !</p>
+</div>
+
+    </div>
+    
+
+  </article>
+
+  
+    <script src="https://utteranc.es/client.js"
+        repo="rdev0x1/rdev-blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    tags: 'ams' 
+  },
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.MathJax) {
+    MathJax.typesetPromise();
+  }
+});
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    
+  </body>
+</html>
+
