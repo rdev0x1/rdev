@@ -53,7 +53,7 @@
     <item>
       <title>C</title>
       <link>https://rdev.pages.dev/tags/c/</link>
-      <pubDate>Wed, 15 Mar 2017 14:53:25 +0000</pubDate>
+      <pubDate>Wed, 15 Aug 2018 20:53:25 +0000</pubDate>
       <guid>https://rdev.pages.dev/tags/c/</guid>
       <description></description>
     </item>
@@ -69,6 +69,34 @@
       <link>https://rdev.pages.dev/tags/interview/</link>
       <pubDate>Wed, 15 Mar 2017 14:53:25 +0000</pubDate>
       <guid>https://rdev.pages.dev/tags/interview/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Asm</title>
+      <link>https://rdev.pages.dev/tags/asm/</link>
+      <pubDate>Sat, 18 Feb 2017 23:10:20 +0000</pubDate>
+      <guid>https://rdev.pages.dev/tags/asm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bug</title>
+      <link>https://rdev.pages.dev/tags/bug/</link>
+      <pubDate>Sat, 18 Feb 2017 23:10:20 +0000</pubDate>
+      <guid>https://rdev.pages.dev/tags/bug/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cltq</title>
+      <link>https://rdev.pages.dev/tags/cltq/</link>
+      <pubDate>Sat, 18 Feb 2017 23:10:20 +0000</pubDate>
+      <guid>https://rdev.pages.dev/tags/cltq/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gcc</title>
+      <link>https://rdev.pages.dev/tags/gcc/</link>
+      <pubDate>Sat, 18 Feb 2017 23:10:20 +0000</pubDate>
+      <guid>https://rdev.pages.dev/tags/gcc/</guid>
       <description></description>
     </item>
   </channel>

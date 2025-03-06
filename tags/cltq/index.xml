@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cltq on Ramon Dev&#39;s blog</title>
+    <link>https://rdev.pages.dev/tags/cltq/</link>
+    <description>Recent content in Cltq on Ramon Dev&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 18 Feb 2017 23:10:20 +0000</lastBuildDate>
+    <atom:link href="https://rdev.pages.dev/tags/cltq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mysterious cltq x86 instruction</title>
+      <link>https://rdev.pages.dev/2017/02-18-mysterious-cltq-x86-instruction/</link>
+      <pubDate>Sat, 18 Feb 2017 23:10:20 +0000</pubDate>
+      <guid>https://rdev.pages.dev/2017/02-18-mysterious-cltq-x86-instruction/</guid>
+      <description>&lt;p&gt;Today I was working on some ugly C code and faced a strange issue:&lt;br&gt;&#xA;a returned value by a function was different when we are back to the caller.&#xA;&lt;br&gt;&#xA;And no, it&amp;rsquo;s not a gcc bug ;)&lt;br&gt;&#xA;Let&amp;rsquo;s talk about that !&lt;br&gt;&#xA;&lt;br&gt;&#xA;create 2 files, file1.c and file2.c like this.&#xA;File1.c:&lt;br&gt;&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;C&#34;&gt;&#xA;#include &lt; stdio.h&gt;&#xA;&#xA;int main(int argc, char* argv[])&#xA;{&#xA;&#x9;void* p = (void*)test_return();&#xA;&#x9;printf(&#34;p = %p\n&#34;, p);&#xA;&#x9;return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;file2.c:&lt;br&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

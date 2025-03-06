@@ -6,14 +6,28 @@
     <description>Recent content in C on Ramon Dev&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Mar 2017 14:53:25 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Aug 2018 20:53:25 +0000</lastBuildDate>
     <atom:link href="https://rdev.pages.dev/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Funny C code</title>
+      <link>https://rdev.pages.dev/2018/08-15-funny-c-code/</link>
+      <pubDate>Wed, 15 Aug 2018 20:53:25 +0000</pubDate>
+      <guid>https://rdev.pages.dev/2018/08-15-funny-c-code/</guid>
+      <description>&lt;p&gt;Here is something funny about C langage :)&lt;br&gt;&#xA;Watch carefuly this function below and try to guess what will this program print to the console.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;c&#34;&gt;&#xA;#include &lt; stdio.h &gt;&#xA;&#xA;int main(void)&#xA;{&#xA;    int p[] = {0, 1, 2, 3, 4, 5, 6, 7};&#xA;    int i=3;&#xA;&#xA;    printf(&#34;i[%d]=%d\n&#34;, i, i[p]);&#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Is this code correct ? If the answer is yes, then what doest printf print ?&lt;br&gt;&#xA;Well &amp;hellip; the answer is easy &amp;hellip;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Intel interview</title>
       <link>https://rdev.pages.dev/2017/03-15-intel-interview/</link>
       <pubDate>Wed, 15 Mar 2017 14:53:25 +0000</pubDate>
       <guid>https://rdev.pages.dev/2017/03-15-intel-interview/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://rdev.pages.dev/2017/03-15-intel-interview/intel_logo.jpg&#34; alt=&#34;alt text&#34; title=&#34;Logo Intel&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Do you want to work for Intel ?&lt;br&gt;&#xA;If you are curious, here is the test I did.&#xA;You are supposed to do it online and you have 2 hours.&lt;br&gt;&#xA;Unfortunately I don&amp;rsquo;t remember exactly the question I had.&lt;/p&gt;&#xA;&lt;h1 id=&#34;training-test&#34;&gt;Training test&lt;/h1&gt;&#xA;&lt;p&gt;Find a  palindrome in an array&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A is the array&lt;/li&gt;&#xA;&lt;li&gt;N is the size&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;There were other special condition that I forgot, sorry.&lt;/p&gt;&#xA;&lt;p&gt;Example:&lt;br&gt;&#xA;A={-1,3,-4,5,1,-6,2,1};&lt;br&gt;&#xA;You can return 1 because&lt;br&gt;&#xA;-1 = -4+5+1-6+2+1&lt;br&gt;&#xA;If there is several solutions, then you can choose which to return.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mysterious cltq x86 instruction</title>
+      <link>https://rdev.pages.dev/2017/02-18-mysterious-cltq-x86-instruction/</link>
+      <pubDate>Sat, 18 Feb 2017 23:10:20 +0000</pubDate>
+      <guid>https://rdev.pages.dev/2017/02-18-mysterious-cltq-x86-instruction/</guid>
+      <description>&lt;p&gt;Today I was working on some ugly C code and faced a strange issue:&lt;br&gt;&#xA;a returned value by a function was different when we are back to the caller.&#xA;&lt;br&gt;&#xA;And no, it&amp;rsquo;s not a gcc bug ;)&lt;br&gt;&#xA;Let&amp;rsquo;s talk about that !&lt;br&gt;&#xA;&lt;br&gt;&#xA;create 2 files, file1.c and file2.c like this.&#xA;File1.c:&lt;br&gt;&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;C&#34;&gt;&#xA;#include &lt; stdio.h&gt;&#xA;&#xA;int main(int argc, char* argv[])&#xA;{&#xA;&#x9;void* p = (void*)test_return();&#xA;&#x9;printf(&#34;p = %p\n&#34;, p);&#xA;&#x9;return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;file2.c:&lt;br&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
