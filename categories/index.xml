@@ -25,8 +25,15 @@
     <item>
       <title>Info</title>
       <link>https://rdev.pages.dev/categories/info/</link>
-      <pubDate>Wed, 15 Aug 2018 20:53:25 +0000</pubDate>
+      <pubDate>Thu, 09 Jul 2020 10:40:33 +0200</pubDate>
       <guid>https://rdev.pages.dev/categories/info/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Science</title>
+      <link>https://rdev.pages.dev/categories/science/</link>
+      <pubDate>Sat, 03 Nov 2018 14:53:25 +0000</pubDate>
+      <guid>https://rdev.pages.dev/categories/science/</guid>
       <description></description>
     </item>
   </channel>

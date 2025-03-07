@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Science on Ramon Dev&#39;s blog</title>
+    <link>https://rdev.pages.dev/categories/science/</link>
+    <description>Recent content in Science on Ramon Dev&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 03 Nov 2018 14:53:25 +0000</lastBuildDate>
+    <atom:link href="https://rdev.pages.dev/categories/science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1&#43;2&#43;3&#43;4&#43;5&#43;...=-1/12 ????</title>
+      <link>https://rdev.pages.dev/2018/11-03-1-2-3-4-5-...-1/12/</link>
+      <pubDate>Sat, 03 Nov 2018 14:53:25 +0000</pubDate>
+      <guid>https://rdev.pages.dev/2018/11-03-1-2-3-4-5-...-1/12/</guid>
+      <description>&lt;script type=&#34;text/javascript&#34;&#xA;  src=&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;&gt;&#xA;&lt;/script&gt;&#xA;&lt;p&gt;A few months ago I found an intersting youtube video explaining why we have $$\sum_{n=1}^{\infty} n = \frac{-1}{12}$$ .&lt;br&gt;&#xA;Wait &amp;hellip;. is it possible that the sum of positive number to equal to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;a negative value ? &amp;#x1f632;&lt;/li&gt;&#xA;&lt;li&gt;a fractional number ? &amp;#x1f635;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I don&amp;rsquo;t think so, but let&amp;rsquo;s dig into this.&lt;/p&gt;&#xA;&lt;p&gt;Here is the video I&amp;rsquo;m talking about:&lt;br&gt;&lt;/p&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/xqTWRtNDO3U&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Okay &amp;hellip; so let&amp;rsquo;s compute&#xA;$$&#xA;\sum_{n=1}^{\infty} n&#xA;$$&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

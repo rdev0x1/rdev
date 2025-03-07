@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.145.0">
+
+
+<title>1&#43;2&#43;3&#43;4&#43;5&#43;...=-1/12 ???? - Ramon Dev&#39;s blog</title>
+<meta property="og:title" content="1&#43;2&#43;3&#43;4&#43;5&#43;...=-1/12 ???? - Ramon Dev&#39;s blog">
+
+
+  <link href='https://rdev.pages.dev/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/rdev0.5.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://bsky.app/profile/rdev0x1.bsky.social">Blue Sky</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">6 min read</span>
+    
+
+    <h1 class="article-title">1&#43;2&#43;3&#43;4&#43;5&#43;...=-1/12 ????</h1>
+
+    
+    <span class="article-date">2018-11-03</span>
+    
+
+    <div class="article-content">
+      
+      <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<p>A few months ago I found an intersting youtube video explaining why we have $$\sum_{n=1}^{\infty} n = \frac{-1}{12}$$ .<br>
+Wait &hellip;. is it possible that the sum of positive number to equal to:</p>
+<ul>
+<li>a negative value ? &#x1f632;</li>
+<li>a fractional number ? &#x1f635;</li>
+</ul>
+<p>I don&rsquo;t think so, but let&rsquo;s dig into this.</p>
+<p>Here is the video I&rsquo;m talking about:<br></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xqTWRtNDO3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Okay &hellip; so let&rsquo;s compute
+$$
+\sum_{n=1}^{\infty} n
+$$</p>
+<h1 id="1st-approcah-how-you-are-supposed-to-compute-it">1st approcah: how you are supposed to compute it</h1>
+<p>$$
+\begin{align}
+\sum_{n=1}^{x} n &amp; = \left(\frac{x(x+1)}{2}\right) \newline
+\sum_{n=1}^\infty x &amp; = \lim\limits_{x \to \infty} \dfrac{x(x+1))}{2} = \infty
+\end{align}
+$$</p>
+<p>Voila ! Done in one line.<br>
+But if mathematicians are not that stupid, and they were working on this subject, and you will see, it is more interstingthan expected.</p>
+<p>So let&rsquo;s try to compute again this sum in other way.</p>
+<h1 id="2nd-not-rigourous-approach">2nd not rigourous approach</h1>
+<p>Now we will use here the heuristic shown in the french video.
+Let&rsquo;s start by computing A with</p>
+<p>$$
+\begin{align}
+A &amp; = 1-1+1-1+1-&hellip; \newline
+A &amp; = 1 - (1-1+1-1+&hellip;) \newline
+A &amp; = 1 - A \newline
+A &amp; = \frac{1}{2}
+\end{align}
+$$</p>
+<p>And now let&rsquo;s compute B:</p>
+<p>$$
+\begin{align}
+B &amp; = 1-2+3-4+5-&hellip; \newline
+B &amp; = 1 - (2-3+4-5+&hellip;) \newline
+B &amp; = 1-B-A \newline
+B &amp; = \frac{1-A}{2} \newline
+B &amp; = \frac{1}{4}
+\end{align}
+$$</p>
+<p>Finally:
+$$
+\begin{align}
+S &amp; = \sum_{x=1}^\infty x \newline
+S &amp; = 1+2+3+4+5+&hellip; \newline
+S - B &amp; = (1+2+3+4+5+&hellip;) - (1-2+3-4+5-&hellip;) \newline
+S - B &amp; = 2(2+4+6+8+&hellip;) \newline
+S - B &amp; = 4(1+2+3+4+5+&hellip;) \newline
+S - B &amp; = 4S \newline
+S &amp; = \frac{-B}{3} \newline
+S &amp; = \frac{-1}{12}
+\end{align}
+$$</p>
+<p>So we got $\sum_{n=1}^\infty n = \frac{-1}{12}$ <br>
+But is this calculation matematicaly correct ? Well &hellip; I&rsquo;m afraid not:<br>
+with divergent series we are not allowed to permute element we want to add to.
+So $x+y+z \neq z+x+y$ <br>
+Therefore, what we did at line 4, 8 and 15 is wrong.<br>
+That&rsquo;s why Abel said: <em>&ldquo;Divergent series are the invention of the devil, and it is shameful to base on them any demonstration whatsoever&rdquo;</em>.</p>
+<h1 id="abel-convergence-approach">Abel convergence approach</h1>
+<p>Here we will use Riemann&rsquo;s zeta function with Abel convergence to compute $\sum_{n=1}^{\infty} n$<br></p>
+<p>The issue here is that our sum is divergent. However in mathematic, we can find an another sum method M that extend the sum methods Σ that we are used to use on simple convergent series.
+This is based on Abel&rsquo;s theorem which states that power series relates a limit of a power series to the sum of its coefficients. <a href="https://en.wikipedia.org/wiki/Divergent_series">More information on divergent series here</a>, and on <a href="https://en.wikipedia.org/wiki/Abel%27s_theorem">Abel theorem here</a></p>
+<!--
+[comment]: # (
+We define Abel summation as
+$$
+\begin{align}
+ A(a_n) & = \lim\limits_{x \to 1^-} \sum\_{n=0}^{\infty} a_n x^n
+\end{align}
+$$
+)
+
+
+
+[comment]: # (
+I saw this in [askamathematician.com](https://www.askamathematician.com/2017/11/q-how-does-12345-112-make-any-sense/) and used this [wikipedia](https://en.wikipedia.org/wiki/1_−_2_%2B_3_−_4_%2B_⋯), but it seems wrong to me. I am not a mathematician, so I maybe missed something, so I did the calculation in my own way.<br>
+Let's start as they did in wikipedia.
+)
+-->
+<p>Firstly the Riemann&rsquo;s zeta function is defined as:
+$$
+\begin{align}
+\zeta(x) &amp; = \sum_{n=1}^\infty \frac{1}{n^x}
+\end{align}
+$$</p>
+<p>This function is defined for all value of x&gt;1. (Re(x)&gt;1 if you use complex number).
+You can check that if x=-1 then we are back to our sum 1+2+3+4+&hellip;<br>
+We can however use the zeta function because it can be analytically continued for all value of $x \neq 1$
+$$
+\begin{align}
+\zeta(x) &amp; = \frac{1}{1^x} + \frac{1}{2^x} + \frac{1}{3^x} + &hellip; \label{zeta1} \newline
+\frac{1}{2^{(x-1)}}  \zeta(x) &amp; = \frac{1}{2^{x-1}} + \frac{1}{2^{x-1}2^x} + \frac{1}{2^{x-1}3^x} + &hellip; \newline
+\frac{1}{2^{(x-1)}}  \zeta(x) &amp; = \frac{2}{2^x} + \frac{2}{2^x 2^x} + \frac{2}{2^x 3^x} + &hellip; \newline
+\frac{1}{2^{(x-1)}}  \zeta(x) &amp; = \frac{2}{2^x} + \frac{2}{4^x} + \frac{2}{6^x} + &hellip; \label{zeta2} \newline
+\end{align}
+$$</p>
+<p>Let&rsquo;s substract \ref{zeta2} from \ref{zeta1}</p>
+<p>$$
+\begin{align}
+\zeta(x) - \frac{1}{2^{(x-1)}}  \zeta(x) &amp; = \frac{1}{1^x} + \frac{1}{2^x} - \frac{2}{2^x} + \frac{1}{3^x} + \frac{1}{4^x} - \frac{2}{4^x} &hellip; \newline
+(1 - \frac{1}{2^{(x-1)}})  \zeta(x) &amp; = 1 - \frac{1}{2^x} + \frac{1}{3^x} - \frac{1}{4^x} + &hellip; \newline
+(1 - \frac{1}{2^{(x-1)}})  \zeta(x) &amp; = \sum_{n=1}^\infty \frac{(-1)^{(n+1)}}{n^x} \newline
+\end{align}
+$$</p>
+<p>Let&rsquo;s fix x=-1 to return back to our sum 1+2+3+4+&hellip; and then let&rsquo;s add y variable with y=1
+$$
+\begin{align}
+-3 \zeta(-1) &amp; = 1 - 2 + 3 - 4 &hellip;. \label{2ndequation} \newline
+-3 \zeta(-1) &amp; = 1 - 2y + 3y^2 - 4y^3 &hellip;.  \newline
+\end{align}
+$$</p>
+<p>According to Euler the result of this sum 1 - 2 + 3 -4 &hellip; equal to $\frac{1}{4}$. This is based on what we call today Abel summation. So $\zeta(-1)=\frac{-1}{12}$. But let&rsquo;s check that.<br>
+This is a well known taylor expansion:</p>
+<p>$$
+\begin{align}
+1 - 2y + 3y^2 - 4y^3 &hellip;. + (-n)^{(n-1}) y^{(n-1)} &amp; = \frac{1}{(1+y)^2} \label{taylorequ} \newline
+\end{align}
+$$</p>
+<p>So we can now check that when y=1 then we indeed got 1/4</p>
+<p>$$
+\begin{align}
+\lim_{y \to 1^-} \frac{1}{(1+y)^2} &amp; = \frac{1}{4}
+\end{align}
+$$</p>
+<p>Now, time to check if the taylor equation is correct<br>
+The taylor serialisation of f(y) at y=a is defined as:</p>
+<p>$$
+\begin{align}
+f(a) + f^{(1)}(y-a) + \frac{f^{(2)}}{2!}(y-a)^2 + &hellip;. + \frac{f^{(n)}}{n!}(y-a)^n \label{taylor} \newline
+\end{align}
+$$</p>
+<p>Here is the result for a=1 and a=0</p>
+<p>$$
+\begin{align}
+f(y) &amp; = \frac{1}{(1+y)^2} \newline
+f^{(1)}(y) &amp; = \frac{-2}{(1+y)^3} \newline
+f^{(2)}(y) &amp; = \frac{6}{(1+y)^4} \newline
+f^{(n)}(y) &amp; = \frac{(-1)^n(n+1)!}{(1+y)^{(n+2)}} \newline
+f(1) &amp; = \frac{1}{(2)^2} \ &amp;&amp; , f(0) = 1\newline
+f^{(1)}(1) &amp; = \frac{-2}{(2)^3} \ &amp;&amp; , f^{(1)}(0) = -2\newline
+f^{(2)}(1) &amp; = \frac{6}{(2)^4} \ &amp;&amp; , f^{(1)}(0) = 6\newline
+f^{(n)}(1) &amp; = \frac{(-1)^n(n+1)!}{2^{(n+2)}} \ &amp;&amp; , f^{(n)}(0) = (-1)^n(n+1)!\newline
+\end{align}
+$$</p>
+<p>Let&rsquo;s apply taylor equation \ref{taylor} at a=0</p>
+<p>$$
+\begin{align}
+f(y) &amp; = 1 - 2y + &hellip;.  (-1)^n(n+1)! \frac{y^n}{n!} \newline
+f(y) &amp; = 1 - 2y + &hellip;.  (-1)^n(n+1)y^n \newline
+f(y) &amp; = 1 - 2y + &hellip;.  (-1)^{(m-1)}(m)y^{m-1} \newline
+f(y) &amp; = 1 - 2y + &hellip;.  (-m)^{(m-1)}y^{m-1} \newline
+\end{align}
+$$</p>
+<p>This value matches with \ref{taylorequ}.<br>
+Now let&rsquo;s apply taylor equation \ref{taylor} at a=1</p>
+<p>$$
+\begin{align}
+f(y) &amp; = \frac{1}{4} - \frac{1}{4}(y-1) + &hellip;.  \frac{n!}{(2)^n n!}(y-1)^n \newline
+\end{align}
+$$</p>
+<p>Let&rsquo;s continue our calculation. If we set y=1 we get 1/4</p>
+<p>$$
+\begin{align}
+f(y) &amp; = \frac{1}{4} - \frac{1}{4}(1-1) + &hellip;.  \frac{n!}{(2)^n n!}(1-1)^n \newline
+f(y) &amp; = \frac{1}{4} \newline
+\end{align}
+$$</p>
+<p>Let&rsquo;s return to \ref{2ndequation}.
+$$
+\begin{align}
+-3 \zeta(-1) &amp; = 1 - 2 + 3 - 4 &hellip;. \newline
+-3 \zeta(-1) &amp; = \frac{1}{4} \newline
+\zeta(-1) &amp; = \frac{-1}{12} \newline
+\end{align}
+$$</p>
+<p>Ok, we did found the expected result:</p>
+<p><table style="background-color:#fff3cd; border-radius:20px; ">
+	<tr>
+		<td><img src="/images/warning.png" /></P> </td>
+		<td><font color=#856404>
+
+$$
+\begin{align}
+\sum_{n=1}^\infty \frac{1}{n^x} &amp; = \frac{-1}{12} \newline
+\end{align}
+$$
+</font></td>
+</tr>
+</table>
+
+
+</p>
+<h1 id="so-is-really-true-that-this-sum-equal-to--112-">So is really true that this sum equal to -1/12 ??</h1>
+<p>Well &hellip; you know that you won&rsquo;t end with $\frac{-1 \text{€}}{12}$ if I gave you 1€, then 2€ on next second, then 3€, and so on for ever.<br>
+But the value of $-\frac{1}{12}$ is used in some areas of string theory and quantum physics, not as a &lsquo;sum&rsquo; but as a regularization of the series.</p>
+<p>Therefore, the statement $\sum_{n=1}^{\infty} n = \frac{-1}{12}$ is not universally true. It holds under specific summation methods or in particular contexts.</p>
+
+    </div>
+    
+
+  </article>
+
+  
+    <script src="https://utteranc.es/client.js"
+        repo="rdev0x1/rdev-blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    tags: 'ams' 
+  },
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.MathJax) {
+    MathJax.typesetPromise();
+  }
+});
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    
+  </body>
+</html>
+

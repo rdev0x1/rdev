@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pine64 on Ramon Dev&#39;s blog</title>
+    <link>https://rdev.pages.dev/tags/pine64/</link>
+    <description>Recent content in Pine64 on Ramon Dev&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 09 Jul 2020 10:40:33 +0200</lastBuildDate>
+    <atom:link href="https://rdev.pages.dev/tags/pine64/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pinephone emulation on qemu</title>
+      <link>https://rdev.pages.dev/2020/07-09-pinephone-emulation-on-qemu/</link>
+      <pubDate>Thu, 09 Jul 2020 10:40:33 +0200</pubDate>
+      <guid>https://rdev.pages.dev/2020/07-09-pinephone-emulation-on-qemu/</guid>
+      <description>&lt;p&gt;Have you heard about pinephone device ? It&amp;rsquo;s a $150 smartphone driven by open source community for the software, and pine64 team for the hardware.&lt;br&gt;&#xA;Most part of the hardware is also open.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: right&#34;&gt;&lt;img src=&#34;https://rdev.pages.dev/2020/07-09-pinephone-emulation-on-qemu/pinephone.jpg&#34; alt=&#34;alt text&#34; title=&#34;Pinephone image&#34;&gt;&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: right&#34;&gt;• Allwinner A64 Quad Core&lt;br&gt;• Mali 400 MP2 GPU&lt;br&gt;• 2GB of LPDDR3 RAM  GPU&lt;br&gt;• 5.95″ LCD 1440×720 &lt;br&gt;•  HW switches: LTE/GNSS, WiFi, Microphone, Speaker, Cameras&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;I have implemented in qemu what is needed to emulate pinephone, but be warned, you will only get a serial console. Currently lima driver won&amp;rsquo;t work, because the pinephone GPU is not implemented on qemu.&lt;br&gt;&#xA;Also note that you will need to clone my qemu repo, because my patch is not (yet?) in official qemu release.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
