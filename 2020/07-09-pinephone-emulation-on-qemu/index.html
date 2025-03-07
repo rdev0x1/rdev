@@ -48,7 +48,9 @@
     
     <li><a href="/about/">About</a></li>
     
-    <li><a href="https://bsky.app/profile/rdev0x1.bsky.social">Blue Sky</a></li>
+    <li><a href="https://github.com/rdev0x1">Github</a></li>
+    
+    <li><a href="https://mastodon.social/home">Mastodon</a></li>
     
   </ul>
 </nav>
@@ -104,13 +106,13 @@ Also note that you will need to clone my qemu repo, because my patch is not (yet
 <p>Voila ! You have extracted what you need.</p>
 <p><strong>3.</strong> Fix dts file: you should remove at least GPU related stuff from it. If you dont want to do it yourself, you can use mine:</p>
 <pre><code class="Bash">
-> wget https://uncaged-coder.github.io/2020/07-09-pinephone-emulation-on-qemu/dts_pinephone.dtb -O /tmp/qemu_img/dts_pinephone.dtb
+> wget https://rdev.pages.dev/2020/07-09-pinephone-emulation-on-qemu/dts_pinephone.dtb -O /tmp/qemu_img/dts_pinephone.dtb
 
 </code></pre>
 <p>the <a href="/post/2020/pinephone/dts_pinephone">dts source is here</a></p>
 <p><strong>4.</strong> Get my patched version of qemu and build it.</p>
 <pre><code class="Bash">
-> git clone https://github.com/uncaged-coder/qemu.git
+> git clone https://github.com/rdev0x1/qemu.git
 > cd qemu
 > git checkout pinephone_wip
 > ./configure
