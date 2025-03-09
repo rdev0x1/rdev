@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://rdev.pages.dev/categories/</loc>
-    <lastmod>2025-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -13,6 +13,80 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://rdev.pages.dev/categories/"
+                />
+  </url><url>
+    <loc>https://rdev.pages.dev/tags/geopolitics/</loc>
+    <lastmod>2025-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rdev.pages.dev/2025/03-09-global-events-explained-is-resource-scarcity-shaping-our-future/</loc>
+    <lastmod>2025-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rdev.pages.dev/categories/philosophy/</loc>
+    <lastmod>2025-03-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://rdev.pages.dev/fr/categories/philosophy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rdev.pages.dev/categories/philosophy/"
+                />
+  </url><url>
+    <loc>https://rdev.pages.dev/tags/philosophy/</loc>
+    <lastmod>2025-03-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://rdev.pages.dev/fr/tags/philosophy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rdev.pages.dev/tags/philosophy/"
+                />
+  </url><url>
+    <loc>https://rdev.pages.dev/post/</loc>
+    <lastmod>2025-03-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://rdev.pages.dev/fr/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rdev.pages.dev/post/"
+                />
+  </url><url>
+    <loc>https://rdev.pages.dev/</loc>
+    <lastmod>2025-03-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://rdev.pages.dev/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rdev.pages.dev/"
+                />
+  </url><url>
+    <loc>https://rdev.pages.dev/tags/resource-scarcity/</loc>
+    <lastmod>2025-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rdev.pages.dev/tags/</loc>
+    <lastmod>2025-03-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://rdev.pages.dev/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rdev.pages.dev/tags/"
                 />
   </url><url>
     <loc>https://rdev.pages.dev/tags/conflict/</loc>
@@ -39,71 +113,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://rdev.pages.dev/tags/ego/"
-                />
-  </url><url>
-    <loc>https://rdev.pages.dev/categories/philosophy/</loc>
-    <lastmod>2025-02-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://rdev.pages.dev/fr/categories/philosophy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rdev.pages.dev/categories/philosophy/"
-                />
-  </url><url>
-    <loc>https://rdev.pages.dev/tags/philosophy/</loc>
-    <lastmod>2025-02-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://rdev.pages.dev/fr/tags/philosophy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rdev.pages.dev/tags/philosophy/"
-                />
-  </url><url>
-    <loc>https://rdev.pages.dev/post/</loc>
-    <lastmod>2025-02-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://rdev.pages.dev/fr/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rdev.pages.dev/post/"
-                />
-  </url><url>
-    <loc>https://rdev.pages.dev/</loc>
-    <lastmod>2025-02-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://rdev.pages.dev/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rdev.pages.dev/"
-                />
-  </url><url>
-    <loc>https://rdev.pages.dev/tags/</loc>
-    <lastmod>2025-02-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://rdev.pages.dev/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://rdev.pages.dev/tags/"
                 />
   </url><url>
     <loc>https://rdev.pages.dev/2025/02-12-the-primacy-of-imposition-the-root-of-human-conflict/</loc>

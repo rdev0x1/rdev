@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Philosophy on Ramon Dev&#39;s blog</title>
-    <link>https://rdev.pages.dev/categories/philosophy/</link>
-    <description>Recent content in Philosophy on Ramon Dev&#39;s blog</description>
+    <title>Resource Scarcity on Ramon Dev&#39;s blog</title>
+    <link>https://rdev.pages.dev/tags/resource-scarcity/</link>
+    <description>Recent content in Resource Scarcity on Ramon Dev&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 09 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://rdev.pages.dev/categories/philosophy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rdev.pages.dev/tags/resource-scarcity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Global Events Explained: Is Resource Scarcity Shaping Our Future?</title>
       <link>https://rdev.pages.dev/2025/03-09-global-events-explained-is-resource-scarcity-shaping-our-future/</link>
       <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://rdev.pages.dev/2025/03-09-global-events-explained-is-resource-scarcity-shaping-our-future/</guid>
       <description>&lt;p&gt;&lt;table style=&#34;background-color:#fff3cd; border-radius:20px; &#34;&gt;&#xA;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&lt;td&gt;&lt;img src=&#34;https://rdev.pages.dev/images/warning.png&#34; /&gt;&lt;/P&gt; &lt;/td&gt;&#xA;&#x9;&#x9;&lt;td&gt;&lt;font color=#856404&gt;&#xA;&#xA;&lt;em&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/em&gt;: &lt;em&gt;The following article represents my personal viewpoint, an attempt to understand and explain the current state of the world.&lt;/em&gt;&#xA;&lt;/font&gt;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;/table&gt;&#xA;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;table style=&#34;background-color:#fff3cd; border-radius:20px; &#34;&gt;&#xA;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&lt;td&gt;&lt;font color=#856404&gt;&#xA;&#xA;&lt;small&gt;&lt;i&gt;Inspired by observing global trends, I propose a hypothesis to interpret ongoing events. I apply a straightforward approach: formulate the simplest hypothesis that could explain observed phenomena and retain it until disproven or until a simpler, more compelling explanation emerges.&#xA;&lt;/i&gt;&lt;/small&gt;&#xA;&lt;/font&gt;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;/table&gt;&#xA;&#xA;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Primacy of Imposition: The Root of Human Conflict</title>
-      <link>https://rdev.pages.dev/2025/02-12-the-primacy-of-imposition-the-root-of-human-conflict/</link>
-      <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://rdev.pages.dev/2025/02-12-the-primacy-of-imposition-the-root-of-human-conflict/</guid>
-      <description>&lt;h2 id=&#34;introduction-the-essence-of-conflict&#34;&gt;Introduction: The Essence of Conflict&lt;/h2&gt;&#xA;&lt;p&gt;All human conflict, at its core, revolves around the desire to impose one’s will&#xA;upon another.&#xA;Whether the issue appears to stem from a scarcity of resources, fear,&#xA;insecurity, or divergent viewpoints, the driving force remains one party&#xA;compelling another to yield. When stripped of its surface complexities, conflict&#xA;can be seen as a stark struggle to make the world—or another person—bend to our&#xA;own wishes, regardless of whether those wishes arise from genuine needs or mere&#xA;preferences.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
